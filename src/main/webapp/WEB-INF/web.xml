@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>SmartLibrary</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+  <servlet-name>addBook</servlet-name>
+  <servlet-class>com.admin.addBookServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>addBook</servlet-name>
+  <url-pattern>/bookServlet</url-pattern>
+  </servlet-mapping> 
+  
+  <servlet>
+  <servlet-name>updatebook</servlet-name>
+  <servlet-class>com.admin.updateBookServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>updatebook</servlet-name>
+  <url-pattern>/updatebook</url-pattern>
+  </servlet-mapping> 
+  
+  <!-- riju xml -->
+  
+  <servlet>
+   <servlet-name>a</servlet-name>
+   <servlet-class>com.admin.adModeratorServlet</servlet-class>
+   </servlet>
+   
+   <servlet-mapping>
+   <servlet-name>a</servlet-name>
+   <url-pattern>/adModeratorServlet</url-pattern>
+   </servlet-mapping>
+   
+   
+   <servlet>
+   <servlet-name>b</servlet-name>
+   <servlet-class>com.admin.adEditModerator</servlet-class>
+   </servlet>
+   
+   <servlet-mapping>
+   <servlet-name>b</servlet-name>
+   <url-pattern>/adEditModerator</url-pattern>
+   </servlet-mapping>
+  
+   
+  <servlet>
+  <servlet-name>c</servlet-name>
+  <servlet-class>com.admin.viewModerator</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>c</servlet-name>
+  <url-pattern>/viewModerator</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  <servlet-name>d</servlet-name>
+  <servlet-class>com.user.register</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>d</servlet-name>
+  <url-pattern>/register</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  <servlet-name>e</servlet-name>
+  <servlet-class>com.user.login</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>e</servlet-name>
+  <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  <servlet-name>f</servlet-name>
+  <servlet-class>com.admin.adBlockUser</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>f</servlet-name>
+  <url-pattern>/adBlockUser</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
